@@ -1,0 +1,41 @@
+.container{
+    height: 500px;
+    color: white;
+    display: grid;
+    padding: 10px;
+    background-color: black;
+    /* grid-template-rows: auto auto;
+    grid-template-columns: 1fr 3fr 1fr; */
+
+    grid-template: auto auto /auto auto auto;
+    /* tomou o lugar da row e column. o "/" é quem diferencia coluna e linha*/
+
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    grid-gap: 10px 10px;
+
+    align-items: center;
+    justify-items: center;
+    /* o padrao é o strech*/
+
+    justify-content: space-around;
+    align-content: flex-start;
+
+}
+
+.r1{
+    background-color: teal;
+}
+
+.r2{
+    background-color: tomato;
+}
+
+.r3{
+    background-color: yellowgreen;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}

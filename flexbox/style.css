@@ -1,0 +1,35 @@
+.container{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* align-content: flex-start; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* align-items: stretch; */
+    background-color: gray;
+    height: 400px;
+    color: white;
+}
+
+.r1{
+    align-self: center; /* depende de align items do componente pai */
+    order: 0;
+    background-color: violet;
+}
+.r2{
+    order: 1; /* altera a ordem do item em relação aos demais */
+    flex-grow: 1; /* torna flexível o tamanho da caixa fixa */
+    background-color: rebeccapurple;
+}
+.r3{
+    order: 3;
+    flex-shrink: 0; /* mantem o tamanho da caixa fixa */
+    background-color: palevioletred;
+}
+
+.rect{
+    width: 200px;
+    height: 200px; 
+}
